@@ -143,7 +143,12 @@ function restartGame (){
     
     modal.style.display = "none"
     direction = "down"
-    snake = [{x: 1, y: 3}]
+    snake = [{
+    x: 1, y: 3}, {
+    x: 1, y: 4
+    }, {
+    x: 1, y: 5
+}]
     food = {x:Math.floor(Math.random() * rows), y: Math.floor(Math.random() * cols)}
     intervalId = setInterval(() => { render() }, 300)
 }
